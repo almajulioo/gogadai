@@ -1,23 +1,95 @@
-.body {
+body,
+html {
+  font-family: "Maven Pro", monospace;
   margin: 0;
+}
+
+:root {
+  --oren: #ff5c00;
+  --hitam: #1c1718;
 }
 
 nav {
   display: flex;
   align-items: center;
-  background-color: #1c1718;
+  background-color: var(--hitam);
   justify-content: space-between;
+  padding: 0px 0px 0px 47px;
+  color: #f0ede2;
+  border-bottom: 7px solid var(--oren);
 }
 
 .nav-list {
   display: flex;
+  gap: 67px;
+  align-items: center;
 }
 
 .nav-list > h2,
 .nav-list > h3 {
+  font-weight: 500;
   margin: 0;
 }
 
+.nav-list > h3 {
+  font-size: 22px;
+}
+
+.nav-list > h2 {
+  font-size: 36px;
+  padding: 30px 31px 30px 37px;
+  background: var(--oren);
+  border-radius: 0px 0px 0px 25px;
+}
+
 .nav-logo {
-  width: 100%;
+  width: 196px;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  padding: 106px 92px 0px 73px;
+  justify-content: space-between;
+  background: var(--hitam) url("../src/main-bg.png") no-repeat;
+  background-position: 73px 100px;
+  background-size: 896px 701.99px;
+}
+
+.main-title {
+  font-size: 90px;
+  /* margin: 0; */
+  color: #ffffff;
+  line-height: 89%;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.main-color {
+  color: var(--oren);
+}
+
+.main-batas {
+  border: 1px solid #d9d9d9;
+}
+
+.main-btn {
+  background-color: var(--oren);
+  padding: 20px 16px;
+  color: white;
+  width: fit-content;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.main-lingkaran {
+  width: 91.74px;
+  margin-top: 131px;
+}
+
+.main-img {
+  max-width: 443px;
+  border-radius: 24px;
+  height: 584px;
 }
