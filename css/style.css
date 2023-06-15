@@ -7,16 +7,16 @@ body,
 html {
   font-family: "Maven Pro", sans-serif;
   margin: 0;
-  background-color: var(--hitam);
+  background-color: #ffffff;
 }
 
 nav {
   display: flex;
   align-items: center;
-  background-color: var(--hitam);
+  background-color: #ffffff;
   justify-content: space-between;
   padding: 0px 0px 0px 47px;
-  color: #f0ede2;
+  color: #000000;
   border-bottom: 7px solid var(--oren);
 }
 
@@ -52,7 +52,7 @@ main {
   height: 100vh;
   padding: 106px 92px 0px 73px;
   justify-content: space-between;
-  background: var(--hitam) url("../src/main-bg.png") no-repeat;
+  background: #ffffff url("../src/main-bg.png") no-repeat;
   background-position: 73px 100px;
   background-size: 896px 701.99px;
 }
@@ -60,7 +60,7 @@ main {
 .main-title {
   font-size: 90px;
   /* margin: 0; */
-  color: #ffffff;
+  color: black;
   line-height: 89%;
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -78,7 +78,7 @@ main {
 .main-btn {
   background-color: var(--oren);
   padding: 20px 16px;
-  color: white;
+  color: black;
   width: fit-content;
   border-radius: 12px;
   margin-top: 30px;
@@ -96,7 +96,8 @@ main {
 }
 
 .section {
-  background: var(--putih);
+  background: black;
+  color: white;
   display: flex;
   justify-content: space-between;
   gap: 52px;
@@ -136,8 +137,8 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 115px 81px 157px 54px;
-  background-color: var(--hitam);
-  color: white;
+  background-color: #ffffff;
+  color: black;
   border-top: 4px solid var(--oren);
   border-bottom: 4px solid var(--oren);
   margin-top: 27px;
@@ -186,7 +187,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
   margin: 0;
-  color: var(--putih);
+  color: black;
 }
 
 .jaminan-hr,
@@ -209,7 +210,7 @@ main {
 .jaminan-each {
   width: 250px;
   aspect-ratio: 1/1;
-  background: #f5f5f5;
+  background: var(--oren);
   border-radius: 43px;
   position: relative;
   display: flex;
@@ -218,7 +219,7 @@ main {
 }
 
 .jaminan-each > h2 {
-  color: black;
+  color: white;
   position: absolute;
   bottom: 18px;
   text-transform: uppercase;
@@ -247,8 +248,8 @@ main {
 }
 
 .cara-each {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1c1718 100%),
-    #ff5c00;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #ffffff 100%),
+    var(--oren);
   display: flex;
   align-items: center;
   padding: 0 25px;
@@ -286,9 +287,129 @@ main {
 
 .cara-btn {
   color: var(--oren);
-  background: #ffffff;
+  background: black;
   border-radius: 19px;
   padding: 23px 20px;
   font-weight: 600;
   font-size: 36px;
+}
+
+.outlet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 152px;
+  margin-top: 80px;
+}
+
+.outlet-title {
+  font-size: 64px;
+  margin: 0;
+}
+
+.outlet-content {
+  margin-top: 40px;
+  text-align: center;
+  background-color: var(--oren);
+  border-radius: 24px;
+  color: white;
+  padding: 51px 200px;
+  padding-bottom: 11px;
+}
+
+.outlet-contitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0;
+}
+
+.outlet-text {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.outlet-cek {
+  margin: 0;
+  border-radius: 24px;
+  background-color: #000000;
+  color: white;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  padding: 25px 90px;
+}
+
+footer {
+  padding: 99px;
+  margin-top: 200px;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 90px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 89%;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  padding-left: 40px;
+  padding-right: 70px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-leftup > h1 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 64px;
+}
+.footer-leftup > h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 32px;
+}
+
+.footer-rightup > h1 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 64px;
+}
+.footer-rightup > h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 32px;
+}
+
+.footer-visit {
+  width: 263px;
+}
+
+.footer-social {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.footer-logo {
+  width: 419px;
+  margin-top: 70px;
 }
