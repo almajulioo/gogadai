@@ -1,12 +1,12 @@
+:root {
+  --oren: #ff5c00;
+  --hitam: #1c1718;
+}
 body,
 html {
   font-family: "Maven Pro", sans-serif;
   margin: 0;
-}
-
-:root {
-  --oren: #ff5c00;
-  --hitam: #1c1718;
+  background-color: var(--hitam);
 }
 
 nav {
@@ -137,6 +137,9 @@ main {
   padding: 115px 81px 157px 54px;
   background-color: var(--hitam);
   color: white;
+  border-top: 4px solid var(--oren);
+  border-bottom: 4px solid var(--oren);
+  margin-top: 27px;
 }
 
 .second-logo {
@@ -167,4 +170,58 @@ main {
 .second-text {
   font-weight: 400;
   font-size: 32px;
+}
+
+.jaminan {
+  padding: 67px 216px 58px 202px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.jaminan-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  margin: 0;
+}
+
+.jaminan-hr {
+  border: 1px solid #d9d9d9;
+  width: 70%;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.jaminan-list {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 90px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 63px;
+}
+
+.jaminan-each {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background: #f5f5f5;
+  border-radius: 43px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jaminan-each > h2 {
+  color: black;
+  position: absolute;
+  bottom: 18px;
+  text-transform: uppercase;
+}
+
+.jaminan-img {
+  width: 190px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
