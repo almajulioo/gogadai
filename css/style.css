@@ -120,11 +120,51 @@ main {
   margin-top: 44px;
   font-weight: 400;
   font-size: 32px;
-  text-align: right;
+  direction: rtl;
+  text-align: justify;
 }
 
 .section-logo {
   width: 79px;
   position: relative;
   top: 3px;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 115px 81px 157px 54px;
+  background-color: var(--hitam);
+  color: white;
+}
+
+.second-logo {
+  width: 416px;
+}
+
+.second-logotitle {
+  font-weight: 700;
+  font-size: 128px;
+  margin: 0;
+}
+
+.second-right {
+  direction: rtl;
+  text-align: justify;
+}
+
+.second-righttitle {
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.second-ojk {
+  width: 274px;
+}
+
+.second-text {
+  font-weight: 400;
+  font-size: 32px;
 }
