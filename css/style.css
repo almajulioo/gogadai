@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Maven Pro", monospace;
+  font-family: "Maven Pro", sans-serif;
   margin: 0;
 }
 
@@ -92,4 +92,39 @@ main {
   max-width: 443px;
   border-radius: 24px;
   height: 584px;
+}
+
+.section {
+  background: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+  padding: 45px 87px 0px 53px;
+}
+
+.section-img {
+  max-width: 400px;
+}
+
+.section-title {
+  font-size: 64px;
+  margin: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.section-text {
+  margin: 0;
+  margin-top: 44px;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: right;
+}
+
+.section-logo {
+  width: 79px;
+  position: relative;
+  top: 3px;
 }
