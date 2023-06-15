@@ -1,6 +1,7 @@
 :root {
   --oren: #ff5c00;
   --hitam: #1c1718;
+  --putih: #d9d9d9;
 }
 body,
 html {
@@ -71,7 +72,7 @@ main {
 }
 
 .main-batas {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--putih);
 }
 
 .main-btn {
@@ -95,7 +96,7 @@ main {
 }
 
 .section {
-  background: #d9d9d9;
+  background: var(--putih);
   display: flex;
   justify-content: space-between;
   gap: 52px;
@@ -180,14 +181,17 @@ main {
   color: white;
 }
 
-.jaminan-title {
+.jaminan-title,
+.cara-title {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
   margin: 0;
+  color: var(--putih);
 }
 
-.jaminan-hr {
-  border: 1px solid #d9d9d9;
+.jaminan-hr,
+.cara-hr {
+  border: 1px solid var(--putih);
   width: 70%;
   margin: 0;
   margin-top: 20px;
@@ -224,4 +228,67 @@ main {
   width: 190px;
   aspect-ratio: 1/1;
   object-fit: contain;
+}
+
+.cara {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--putih);
+}
+
+.cara-list {
+  display: flex;
+  width: 100%;
+  height: 693px;
+  gap: 2.5px;
+  margin-top: 63px;
+}
+
+.cara-each {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1c1718 100%),
+    #ff5c00;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+.cara-each > h1 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 89%;
+  text-transform: uppercase;
+}
+
+.cara-nomor {
+  font-size: 64px;
+}
+.cara-text {
+  font-size: 48px;
+}
+
+.cara-each.pertama {
+  width: 25%;
+  border-radius: 0px 24px 0px 0px;
+}
+.cara-each.kedua {
+  width: 50%;
+  border-radius: 24px 24px 0px 0px;
+  text-align: center;
+}
+.cara-each.ketiga {
+  width: 25%;
+  direction: rtl;
+  border-radius: 24px 0px 0px 0px;
+}
+
+.cara-btn {
+  color: var(--oren);
+  background: #ffffff;
+  border-radius: 19px;
+  padding: 23px 20px;
+  font-weight: 600;
+  font-size: 36px;
 }
