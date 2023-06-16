@@ -760,6 +760,18 @@ footer {
   .section-logo {
     width: 50px;
   }
+
+  .main-img {
+    height: 476px;
+  }
+
+  .main-lingkaran {
+    width: 70px;
+  }
+
+  main {
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
