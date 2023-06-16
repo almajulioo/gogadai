@@ -716,6 +716,10 @@ footer {
   nav {
     padding: 0px 0px 0px 27px;
   }
+
+  .outlet-cek {
+    padding: 20px 50px;
+  }
 }
 
 @media only screen and (max-width: 856px) {
@@ -776,6 +780,11 @@ footer {
 }
 
 @media only screen and (max-width: 777px) {
+  .cara-btn {
+    font-size: 24px;
+    padding: 15px 13px;
+  }
+
   :root {
     --sedang: 20px;
     --besar: 44px;
@@ -941,9 +950,22 @@ footer {
   .outlet-text {
     font-size: 16px;
   }
+
+  .cara-btn {
+    font-size: 23px;
+    border-radius: 13px;
+  }
+  .outlet-cek {
+    padding: 15px 40px;
+    border-radius: 18px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .cara-btn {
+    font-size: 22px;
+  }
+
   .main-img {
     height: 425px;
   }
