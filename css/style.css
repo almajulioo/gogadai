@@ -961,7 +961,23 @@ footer {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .main-img {
+    height: 432px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .main-img {
+    height: 402px;
+    width: 90%;
+    object-fit: contain;
+  }
+
+  main {
+    gap: 20px;
+  }
+
   .cara-btn {
     font-size: 22px;
   }
