@@ -241,7 +241,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 63px;
+  margin-top: 53px;
 }
 
 .jaminan-each {
@@ -281,7 +281,7 @@ main {
   width: 100%;
   height: 693px;
   gap: 2.5px;
-  margin-top: 63px;
+  margin-top: 53px;
 }
 
 .cara-each {
@@ -681,7 +681,9 @@ footer {
 
   .jaminan-each {
     width: 200px;
+    border-radius: 33px;
   }
+
   .jaminan-each > h2 {
     font-size: 19px;
     bottom: 7px;
@@ -704,6 +706,15 @@ footer {
 
   :root {
     --extra: 76px;
+  }
+
+  .second-ojk {
+    width: 247px;
+    margin-top: 31px;
+  }
+
+  nav {
+    padding: 0px 0px 0px 27px;
   }
 }
 
@@ -755,6 +766,7 @@ footer {
   }
 
   .jaminan-each {
+    border-radius: 25px;
     width: 180px;
   }
 
@@ -787,6 +799,52 @@ footer {
 
   main {
     gap: 40px;
+    padding: 40px 40px;
+  }
+
+  .second-ojk {
+    width: 207px;
+    margin-top: 21px;
+  }
+
+  .second {
+    padding: 60px 30px 80px 30px;
+  }
+
+  .second-logo {
+    width: 286px;
+  }
+
+  .second-logotitle {
+    font-size: 80px;
+  }
+
+  .jaminan-list {
+    margin-top: 30px;
+  }
+
+  .outlet-content {
+    margin-top: 20px;
+  }
+
+  .outlet-contitle {
+    font-size: 25px;
+  }
+
+  .fa-solid.fa-circle-arrow-down.outlet-circle {
+    font-size: 50px !important;
+  }
+  .outlet-text {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  nav {
+    padding: 0px 0px 0px 17px;
+  }
+
+  .cara-list {
+    margin-top: 33px;
   }
 }
 
@@ -851,6 +909,9 @@ footer {
 }
 
 @media only screen and (max-width: 690px) {
+  .main-img {
+    height: 452px;
+  }
   .cara-text {
     font-size: 24px;
   }
@@ -872,8 +933,20 @@ footer {
   .section-text {
     margin-top: 15px;
   }
+
+  .outlet-contitle {
+    font-size: 23px;
+  }
+
+  .outlet-text {
+    font-size: 16px;
+  }
 }
+
 @media only screen and (max-width: 600px) {
+  .main-img {
+    height: 425px;
+  }
   .cara-text {
     font-size: 24px;
   }
@@ -894,6 +967,14 @@ footer {
     width: 50px;
     right: -55px;
   }
+
+  .second-logotitle {
+    font-size: 70px;
+  }
+
+  .second-logo {
+    width: 276px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -901,6 +982,10 @@ footer {
     --extra: 48px;
     --besar: 30px;
     --sedang: 17px;
+  }
+
+  .main-img {
+    height: 392px;
   }
 
   .section-logo {
@@ -930,6 +1015,7 @@ footer {
 
   .cara-list {
     height: 375px;
+    gap: 1.5px;
   }
 }
 
@@ -941,6 +1027,47 @@ footer {
     width: 45px;
     right: -45px;
   }
+
+  .footer-logo {
+    width: 175px;
+  }
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  .footer-visit {
+    width: 160px;
+  }
+
+  .footer-social {
+    font-size: 20px;
+  }
+
+  .jaminan-each {
+    width: 140px;
+    border-radius: 23px;
+  }
+
+  .jaminan-img {
+    width: 80px;
+  }
+
+  .jaminan-each > h2 {
+    font-size: 17px;
+    bottom: 7px;
+  }
+
+  .second-logo {
+    width: 233px;
+  }
+
+  .second-logotitle {
+    font-size: 60px;
+  }
+
+  .second {
+    padding: 30px 15px 50px 15px;
+  }
 }
 
 @media only screen and (max-width: 462px) {
@@ -950,5 +1077,75 @@ footer {
   .main-star {
     width: 40px;
     right: -45px;
+  }
+
+  .jaminan-list {
+    column-gap: 15px;
+    row-gap: 25px;
+  }
+
+  .jaminan-each {
+    width: 115px;
+  }
+
+  .jaminan-img {
+    width: 70px;
+    margin-top: 12px;
+  }
+
+  .jaminan-each > h2 {
+    font-size: 15px;
+  }
+  .jaminan {
+    padding: 30px 40px 18px 40px;
+  }
+  :root {
+    --extra: 35px;
+    --besar: 27px;
+    --sedang: 15px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .cara-text {
+    font-size: 18px;
+  }
+
+  .main-star {
+    width: 35px;
+    right: -35px;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .footer-visit {
+    width: 140px;
+  }
+  .footer-social {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+  .footer-content {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    --extra: 32px;
+  }
+
+  main {
+    padding: 40px 30px;
+  }
+
+  .cara-text {
+    font-size: 16px;
   }
 }
