@@ -2,6 +2,10 @@
   --oren: #ff5c00;
   --hitam: #1c1718;
   --putih: #d9d9d9;
+
+  --extra: 90px;
+  --besar: 64px;
+  --sedang: 32px;
 }
 body,
 html {
@@ -52,19 +56,24 @@ main {
   height: 100vh;
   padding: 106px 92px 0px 73px;
   justify-content: space-between;
-  background: #ffffff url("../src/main-bg.png") no-repeat;
-  background-position: 73px 100px;
   background-size: 896px 701.99px;
 }
 
 .main-title {
-  font-size: 90px;
+  font-size: var(--extra);
   /* margin: 0; */
   color: black;
   line-height: 89%;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   margin-top: 40px;
+  position: relative;
+}
+
+.main-star {
+  position: absolute;
+  top: -66px;
+  right: -90px;
 }
 
 .main-color {
@@ -84,6 +93,24 @@ main {
   margin-top: 30px;
 }
 
+.main-left,
+.main-right {
+  z-index: 1;
+}
+
+.main-leftbarang {
+  z-index: -1;
+  display: flex;
+  position: relative;
+}
+
+.main-barang {
+  position: absolute;
+  left: 100px;
+  top: 0;
+  width: 896px;
+}
+
 .main-lingkaran {
   width: 91.74px;
   margin-top: 131px;
@@ -99,6 +126,7 @@ main {
   background: black;
   color: white;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 52px;
   padding: 45px 87px 0px 53px;
@@ -109,7 +137,7 @@ main {
 }
 
 .section-title {
-  font-size: 64px;
+  font-size: var(--besar);
   margin: 0;
   font-weight: 500;
   display: flex;
@@ -121,9 +149,10 @@ main {
   margin: 0;
   margin-top: 44px;
   font-weight: 400;
-  font-size: 32px;
+  font-size: var(--sedang);
   direction: rtl;
   text-align: justify;
+  padding-bottom: 50px;
 }
 
 .section-logo {
@@ -154,13 +183,19 @@ main {
   margin: 0;
 }
 
+.second-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .second-right {
   direction: rtl;
   text-align: justify;
 }
 
 .second-righttitle {
-  font-size: 64px;
+  font-size: var(--besar);
   font-weight: 500;
   margin: 0;
 }
@@ -171,7 +206,7 @@ main {
 
 .second-text {
   font-weight: 400;
-  font-size: 32px;
+  font-size: var(--sedang);
 }
 
 .jaminan {
@@ -185,8 +220,9 @@ main {
 .jaminan-title,
 .cara-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 64px;
+  font-size: var(--besar);
   margin: 0;
+  text-align: center;
   color: black;
 }
 
@@ -204,6 +240,7 @@ main {
   row-gap: 90px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 63px;
 }
 
@@ -264,7 +301,7 @@ main {
 }
 
 .cara-nomor {
-  font-size: 64px;
+  font-size: var(--besar);
 }
 .cara-text {
   font-size: 48px;
@@ -303,8 +340,9 @@ main {
 }
 
 .outlet-title {
-  font-size: 64px;
+  font-size: var(--besar);
   margin: 0;
+  text-align: center;
 }
 
 .outlet-content {
@@ -337,7 +375,7 @@ main {
   border-radius: 24px;
   background-color: #000000;
   color: white;
-  font-size: 32px;
+  font-size: var(--sedang);
   font-family: "Montserrat", sans-serif;
   padding: 25px 90px;
 }
@@ -350,7 +388,7 @@ footer {
 .footer-title {
   margin: 0;
   font-weight: 700;
-  font-size: 90px;
+  font-size: var(--extra);
   font-family: "Montserrat", sans-serif;
   line-height: 89%;
   text-transform: uppercase;
@@ -379,23 +417,23 @@ footer {
 .footer-leftup > h1 {
   font-weight: 500;
   margin: 0;
-  font-size: 64px;
+  font-size: var(--besar);
 }
 .footer-leftup > h2 {
   font-weight: 400;
   margin: 0;
-  font-size: 32px;
+  font-size: var(--sedang);
 }
 
 .footer-rightup > h1 {
   font-weight: 500;
   margin: 0;
-  font-size: 64px;
+  font-size: var(--besar);
 }
 .footer-rightup > h2 {
   font-weight: 400;
   margin: 0;
-  font-size: 32px;
+  font-size: var(--sedang);
 }
 
 .footer-visit {
@@ -412,4 +450,394 @@ footer {
 .footer-logo {
   width: 419px;
   margin-top: 70px;
+}
+
+.footer-visitcontainer.after {
+  display: none;
+}
+
+.footer-responsive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1507px) {
+  :root {
+    --besar: 58px;
+  }
+  .second-text {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1443px) {
+  .main-star {
+    position: absolute;
+    top: -66px;
+    right: -67px;
+  }
+  .main-barang {
+    width: 700px;
+    left: 180px;
+  }
+}
+
+@media only screen and (max-width: 1402px) {
+  .second {
+    flex-direction: column;
+  }
+  .second-right {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-goresponsive {
+    display: none;
+  }
+
+  .second-ojk {
+    margin-top: 67px;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .outlet-content {
+    padding: 31px 150px;
+  }
+
+  .outlet-contitle {
+    font-size: 30px;
+  }
+
+  .outlet-text {
+    font-size: 20px;
+  }
+
+  .main-title {
+    width: fit-content;
+    margin: 0;
+  }
+
+  :root {
+    --besar: 48px;
+    --sedang: 24px;
+  }
+
+  .footer-logo {
+    width: 350px;
+  }
+
+  .footer-visit {
+    width: 232px;
+  }
+
+  .footer-social {
+    gap: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 70px;
+    height: fit-content;
+    padding: 60px 60px;
+    padding-bottom: 39px;
+  }
+  .main-right {
+    display: flex;
+    justify-content: center;
+  }
+  .main-leftbarang {
+    flex-direction: column;
+  }
+  .main-barang {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .main-lingkaran {
+    margin: 0;
+  }
+
+  .main-star {
+    right: -123px;
+    top: 0;
+  }
+
+  .main-btn {
+    display: none;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1265px) {
+  .section-text {
+    margin-top: 32px;
+  }
+  .section-img {
+    max-width: 350px;
+  }
+
+  .jaminan {
+    padding: 50px 170px 38px 170px;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .outlet-content {
+    padding: 21px 0;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .outlet-text {
+    width: 60%;
+  }
+
+  .outlet {
+    width: 100%;
+    padding: 0;
+  }
+
+  .second-logotitle {
+    font-size: 110px;
+  }
+
+  .second-logo {
+    width: 380px;
+  }
+  .second {
+    padding: 80px 50px 120px 50px;
+  }
+
+  .jaminan {
+    padding: 50px 100px 38px 100px;
+  }
+
+  .jaminan-each {
+    width: 220px;
+  }
+  .jaminan-list {
+    row-gap: 40px;
+  }
+  .jaminan-each > h2 {
+    font-size: 20px;
+  }
+
+  .jaminan-img {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .cara-text {
+    font-size: 40px;
+  }
+  .cara-each {
+    padding: 0 18px;
+  }
+  .section {
+    padding: 45px 10px 0px 10px;
+    gap: 32px;
+  }
+  /* .section-text {
+    font-size: 24px;
+  } */
+  .section-title {
+    flex-wrap: wrap;
+  }
+
+  .jaminan {
+    padding: 50px 70px 38px 70px;
+  }
+
+  .jaminan-each {
+    width: 200px;
+  }
+  .jaminan-each > h2 {
+    font-size: 19px;
+    bottom: 7px;
+  }
+
+  .jaminan-img {
+    width: 140px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-list {
+    display: none;
+  }
+  .main-star {
+    right: -75px;
+    width: 60px;
+  }
+
+  :root {
+    --extra: 76px;
+  }
+}
+
+@media only screen and (max-width: 856px) {
+  .section-logo {
+    width: 62px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .footer-visitcontainer.before {
+    display: none;
+  }
+  .footer-visitcontainer.after {
+    display: block;
+  }
+
+  .footer-right {
+    align-items: normal;
+  }
+
+  .footer-logo {
+    width: 300px;
+  }
+
+  .cara-text {
+    font-size: 34px;
+  }
+
+  .second-logotitle {
+    font-size: 90px;
+  }
+
+  .second-logo {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .jaminan {
+    padding: 50px 70px 38px 70px;
+  }
+
+  .jaminan-each {
+    width: 180px;
+  }
+
+  .jaminan-img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  :root {
+    --sedang: 20px;
+    --besar: 44px;
+  }
+
+  .section-title {
+    gap: 8px;
+  }
+
+  .section-logo {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .jaminan {
+    padding: 50px 70px 38px 70px;
+  }
+
+  .jaminan-each {
+    width: 160px;
+  }
+
+  .jaminan-img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  :root {
+    --extra: 67px;
+  }
+
+  .section-img {
+    max-width: 300px;
+  }
+
+  .main-star {
+    width: 55px;
+    right: -60px;
+  }
+  .cara-text {
+    font-size: 30px;
+  }
+  .cara-each {
+    padding: 0 7px;
+  }
+
+  .footer-visit {
+    width: 200px;
+  }
+
+  .footer-social {
+    gap: 15px;
+  }
+
+  .footer-logo {
+    width: 250px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .cara-text {
+    font-size: 24px;
+  }
+  :root {
+    --extra: 60px;
+  }
+  .main-star {
+    width: 50px;
+    right: -55px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cara-text {
+    font-size: 24px;
+  }
+  :root {
+    --extra: 54px;
+  }
+  .main-star {
+    width: 50px;
+    right: -55px;
+  }
 }
