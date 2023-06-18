@@ -3,10 +3,13 @@
   --hitam: #1c1718;
   --putih: #d9d9d9;
 
+  --paling: 128px;
   --extra: 90px;
-  --besar: 64px;
+  --besar: 61px;
   --sedang: 32px;
+  --semititle: 36px;
 }
+
 body,
 html {
   font-family: "Maven Pro", sans-serif;
@@ -41,7 +44,7 @@ nav {
 }
 
 .nav-list > h2 {
-  font-size: 36px;
+  font-size: var(--semititle);
   padding: 30px 31px 30px 37px;
   background: var(--oren);
   border-radius: 0px 0px 0px 25px;
@@ -53,6 +56,7 @@ nav {
 
 main {
   display: flex;
+  min-height: 780px;
   height: 100vh;
   padding: 106px 92px 0px 73px;
   justify-content: space-between;
@@ -73,7 +77,7 @@ main {
 .main-star {
   position: absolute;
   top: -66px;
-  right: -90px;
+  right: -20px;
 }
 
 .main-color {
@@ -179,7 +183,7 @@ main {
 
 .second-logotitle {
   font-weight: 700;
-  font-size: 128px;
+  font-size: var(--paling);
   margin: 0;
 }
 
@@ -307,6 +311,11 @@ main {
   font-size: 48px;
 }
 
+.cara-detail {
+  font-size: var(--sedang);
+  color: white;
+}
+
 .cara-each.pertama {
   width: 25%;
   border-radius: 0px 24px 0px 0px;
@@ -328,7 +337,7 @@ main {
   border-radius: 19px;
   padding: 23px 20px;
   font-weight: 600;
-  font-size: 36px;
+  font-size: var(--semititle);
 }
 
 .outlet {
@@ -358,7 +367,7 @@ main {
 .outlet-contitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 36px;
+  font-size: var(--semititle);
   margin: 0;
 }
 
@@ -430,10 +439,12 @@ footer {
   margin: 0;
   font-size: var(--besar);
 }
+
 .footer-rightup > h2 {
   font-weight: 400;
   margin: 0;
   font-size: var(--sedang);
+  max-width: 570px;
 }
 
 .footer-visit {
@@ -462,6 +473,75 @@ footer {
   align-items: center;
 }
 
+.harus-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.harus-titleleft {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--besar);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.harus-adagadai {
+  text-transform: capitalize;
+  font-family: "Maven Pro", sans-serif;
+  font-size: var(--paling);
+}
+
+.harus-titleright {
+  font-size: calc(var(--paling) * 2);
+  margin: 0;
+  position: relative;
+  top: -20px;
+}
+
+.harus-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 150px;
+  row-gap: 85px;
+  column-gap: 75px;
+  justify-content: center;
+}
+
+.harus-each {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.harus-eachimg {
+  padding: 55px 60px;
+  width: 100px;
+  box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 43px;
+}
+
+.harus-eachtitle {
+  font-weight: 700;
+  font-size: var(--semititle);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Maven Pro", monospace;
+  color: var(--oren);
+  margin: 0;
+}
+
+.harus-eachdetail {
+  font-weight: 600;
+  font-family: "Maven Pro", monospace;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: var(--semititle);
+  color: black;
+  margin: 0;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 1507px) {
   :root {
@@ -477,7 +557,7 @@ footer {
   .main-star {
     position: absolute;
     top: -66px;
-    right: -67px;
+    /* right: -67px; */
   }
   .main-barang {
     width: 700px;
@@ -510,8 +590,8 @@ footer {
     padding: 31px 150px;
   }
 
-  .outlet-contitle {
-    font-size: 30px;
+  :root {
+    --semititle: 30px;
   }
 
   .outlet-text {
@@ -566,7 +646,7 @@ footer {
   }
 
   .main-star {
-    right: -123px;
+    /* right: -123px; */
     top: 0;
   }
 
@@ -611,8 +691,8 @@ footer {
     padding: 0;
   }
 
-  .second-logotitle {
-    font-size: 110px;
+  :root {
+    --paling: 110px;
   }
 
   .second-logo {
@@ -642,6 +722,13 @@ footer {
 }
 
 @media only screen and (max-width: 990px) {
+  .harus-eachimg {
+    padding: 40px 45px;
+  }
+
+  .harus-list {
+    padding: 0 120px;
+  }
   .cara-text {
     font-size: 40px;
   }
@@ -653,8 +740,10 @@ footer {
     padding: 0 18px;
   }
 
+  :root {
+    --semititle: 28px;
+  }
   .cara-btn {
-    font-size: 28px;
     padding: 17px 15px;
   }
 
@@ -695,13 +784,13 @@ footer {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   .nav-list {
     display: none;
   }
 
   .main-star {
-    right: -75px;
+    /* right: -75px; */
     width: 60px;
   }
 
@@ -720,6 +809,18 @@ footer {
 
   .outlet-cek {
     padding: 20px 50px;
+  }
+
+  .harus-list {
+    padding: 0 60px;
+    row-gap: 55px;
+    column-gap: 45px;
+  }
+
+  .harus-eachimg {
+    padding: 35px 40px;
+    width: 90px;
+    border-radius: 30px;
   }
 }
 
@@ -756,8 +857,8 @@ footer {
     font-size: 34px;
   }
 
-  .second-logotitle {
-    font-size: 90px;
+  :root {
+    --paling: 90px;
   }
 
   .second-logo {
@@ -782,12 +883,18 @@ footer {
 
 @media only screen and (max-width: 777px) {
   .cara-btn {
-    font-size: 24px;
     padding: 15px 13px;
+  }
+
+  .harus-eachimg {
+    width: 80px;
+    border-radius: 20px;
+    padding: 30px 35px;
   }
 
   :root {
     --sedang: 20px;
+    --semititle: 24px;
     --besar: 44px;
   }
 
@@ -825,8 +932,9 @@ footer {
     width: 286px;
   }
 
-  .second-logotitle {
-    font-size: 80px;
+  :root {
+    --paling: 80px;
+    --extra: 69px;
   }
 
   .jaminan-list {
@@ -835,10 +943,6 @@ footer {
 
   .outlet-content {
     margin-top: 20px;
-  }
-
-  .outlet-contitle {
-    font-size: 25px;
   }
 
   .fa-solid.fa-circle-arrow-down.outlet-circle {
@@ -873,6 +977,17 @@ footer {
 }
 
 @media only screen and (max-width: 720px) {
+  .harus-list {
+    padding: 0 30px;
+    row-gap: 35px;
+    column-gap: 20px;
+  }
+
+  .harus-eachimg {
+    width: 70px;
+    padding: 25px 30px;
+  }
+
   :root {
     --extra: 67px;
   }
@@ -884,7 +999,7 @@ footer {
 
   .main-star {
     width: 55px;
-    right: -60px;
+    /* right: -60px; */
   }
   .cara-text {
     font-size: 30px;
@@ -937,23 +1052,20 @@ footer {
 
   .main-star {
     width: 50px;
-    right: -55px;
+    /* right: -55px; */
   }
 
   .section-text {
     margin-top: 15px;
   }
 
-  .outlet-contitle {
-    font-size: 23px;
-  }
-
   .outlet-text {
     font-size: 16px;
   }
-
+  :root {
+    --semititle: 23px;
+  }
   .cara-btn {
-    font-size: 23px;
     border-radius: 13px;
   }
   .outlet-cek {
@@ -979,10 +1091,6 @@ footer {
     gap: 20px;
   }
 
-  .cara-btn {
-    font-size: 22px;
-  }
-
   .main-img {
     height: 425px;
   }
@@ -992,6 +1100,7 @@ footer {
   :root {
     --extra: 54px;
     --besar: 34px;
+    --semititle: 22px;
     --sedang: 18px;
   }
 
@@ -1004,13 +1113,12 @@ footer {
   }
   .main-star {
     width: 50px;
-    right: -55px;
+    /* right: -55px; */
   }
 
-  .second-logotitle {
-    font-size: 70px;
+  :root {
+    --paling: 70px;
   }
-
   .second-logo {
     width: 276px;
   }
@@ -1032,7 +1140,7 @@ footer {
   }
   .main-star {
     width: 50px;
-    right: -50px;
+    /* right: -50px; */
   }
 
   .footer-logo {
@@ -1064,7 +1172,7 @@ footer {
   }
   .main-star {
     width: 45px;
-    right: -45px;
+    /* right: -45px; */
   }
 
   .footer-logo {
@@ -1100,8 +1208,8 @@ footer {
     width: 233px;
   }
 
-  .second-logotitle {
-    font-size: 60px;
+  :root {
+    --paling: 60px;
   }
 
   .second {
@@ -1115,7 +1223,7 @@ footer {
   }
   .main-star {
     width: 40px;
-    right: -45px;
+    /* right: -45px; */
   }
 
   .jaminan-list {
@@ -1152,7 +1260,6 @@ footer {
 
   .main-star {
     width: 35px;
-    right: -35px;
   }
 
   .footer-logo {
