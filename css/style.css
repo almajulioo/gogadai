@@ -18,6 +18,58 @@ html {
   background-color: #ffffff;
 }
 
+.sidenav {
+  position: fixed;
+  right: 0;
+  padding: 20px 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  height: 100%;
+  width: 60%;
+  transition: all 1s;
+  transform: translateX(160%);
+}
+
+.sidenav-black {
+  transition: all 1s;
+  transform: translateX(120%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  height: 100%;
+  z-index: 99;
+  right: 0;
+  position: fixed;
+}
+
+.sidenav.active {
+  transform: translateX(0%);
+}
+.sidenav-black.active {
+  transform: translateX(0%);
+  right: 60%;
+}
+
+.fa-solid.fa-x {
+  align-self: flex-end;
+  font-size: 22px;
+}
+
+.sidenav-home {
+  background: var(--oren);
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.sidenav-link {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
 nav {
   display: flex;
   align-items: center;

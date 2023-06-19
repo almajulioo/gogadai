@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css?v=132" />
+    <link rel="stylesheet" href="./css/style.css?v=133" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="./src/adalogo-oren.png" />
@@ -19,15 +19,31 @@
     <title>AdaGadai</title>
   </head>
   <body>
-    <div class="sidenav"></div>
+    <div class="sidenav">
+      <i class="fa-solid fa-x"></i>
+      <a href="#"><div class="sidenav-home"></div></a>
+      <a href="#jaminan"
+        ><h3 class="sidenav-link" style="margin-top: 20px">
+          Daftar Jaminan
+        </h3></a
+      >
+      <a href="#cara"><h3 class="sidenav-link">Cara Gadai</h3></a>
+      <a href="#outlet"><h3 class="sidenav-link">Kontak</h3></a>
+      <a target="_blank" href="https://wa.me/6285943198807">
+        <h3 class="sidenav-link">Hubungi Kami</h3></a
+      >
+    </div>
+    <div class="sidenav-black"></div>
 
     <nav>
-      <img class="nav-logo" src="./src/adagadai-logo.png" alt="" />
-      <i class="fas fa-bars"></i>
+      <a href="#"
+        ><img class="nav-logo" src="./src/adagadai-logo.png" alt=""
+      /></a>
+      <i id="activesidenav" class="fas fa-bars"></i>
       <div class="nav-list">
         <h3><a href="#jaminan">Daftar Jaminan</a></h3>
-        <h3><a href="#jaminan">Cara Gadai</a></h3>
-        <h3><a href="#jaminan">Kontak</a></h3>
+        <h3><a href="#cara">Cara Gadai</a></h3>
+        <h3><a href="#outlet">Kontak</a></h3>
         <h2>
           <a target="_blank" href="https://wa.me/6285943198807">Hubungi Kami</a>
         </h2>
@@ -192,7 +208,7 @@
       </div>
     </div>
 
-    <div class="cara">
+    <div class="cara" id="cara">
       <h1 class="cara-title">CARA <span class="main-color">GADAI</span></h1>
       <hr class="cara-hr" />
       <div class="cara-list">
@@ -233,7 +249,7 @@
       </h1>
     </div>
 
-    <div class="outlet">
+    <div class="outlet" id="outlet">
       <h1 class="outlet-title">
         OUTLET Ada<span class="main-color">Gadai</span>
       </h1>
@@ -304,5 +320,6 @@
         </div>
       </div>
     </footer>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
