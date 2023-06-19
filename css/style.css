@@ -29,18 +29,17 @@ html {
   z-index: 100;
   height: 100%;
   width: 60%;
-  transition: all 1s;
+  transition: all 0.6s;
   transform: translateX(160%);
 }
 
 .sidenav-black {
+  z-index: -3;
+  opacity: 0;
   transition: all 1s;
-  transform: translateX(120%);
   background-color: rgba(0, 0, 0, 0.5);
-  width: 40%;
+  width: 100%;
   height: 100%;
-  z-index: 99;
-  right: 0;
   position: fixed;
 }
 
@@ -48,8 +47,9 @@ html {
   transform: translateX(0%);
 }
 .sidenav-black.active {
-  transform: translateX(0%);
-  right: 60%;
+  z-index: 99;
+  display: block;
+  opacity: 1;
 }
 
 .fa-solid.fa-x {

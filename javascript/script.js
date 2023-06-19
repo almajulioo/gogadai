@@ -5,6 +5,7 @@ const sideNavBlack = document.querySelector(".sidenav-black");
 
 bar.addEventListener("click", handleClick);
 closeNav.addEventListener("click", handleClose);
+sideNavBlack.addEventListener("click", handleClose);
 
 function handleClick() {
   sideNav.classList.add("active");
