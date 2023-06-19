@@ -43,6 +43,12 @@ html {
   position: fixed;
 }
 
+.sidenav-hubungi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidenav.active {
   transform: translateX(0%);
 }
