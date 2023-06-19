@@ -28,6 +28,10 @@ nav {
   border-bottom: 7px solid var(--oren);
 }
 
+.fas.fa-bars {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -791,6 +795,11 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
+  .fas.fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+
   .nav-list {
     display: none;
   }
@@ -810,7 +819,7 @@ footer {
   }
 
   nav {
-    padding: 15px 0px 15px 27px;
+    padding: 15px 20px 15px 27px;
   }
 
   .outlet-cek {
