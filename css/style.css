@@ -851,7 +851,9 @@ footer {
     display: block;
     font-size: 30px;
   }
-
+  a {
+    cursor: default;
+  }
   .nav-list {
     display: none;
   }
